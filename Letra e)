@@ -1,0 +1,14 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Digite um número maior ou igual a 10 para a condição ser verdadeira: ");
+        int numeroMaior = int.Parse(Console.ReadLine());
+
+        Console.WriteLine((numeroMaior >= 10)? "A condição é verdadeira: o número é maior ou igual a 10" : "A condição não é verdadeira: o número é menor que 10");
+
+        Console.ReadKey();
+    }
+}
