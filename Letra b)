@@ -1,0 +1,19 @@
+using System;
+
+namespace Atividade_04_Part_03
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			Console.Write("Digite um número: ");
+			int numero1 = int.Parse(Console.ReadLine());
+			
+			Console.Write("Digite outro número:");
+			int numero2 = int.Parse(Console.ReadLine());
+			
+			Console.WriteLine((numero1 > numero2)? "O primeiro número é maior que o segundo número." : "O segundo número é maior que o primeiro número.");
+			Console.ReadKey();
+		}
+	}
+}
