@@ -1,0 +1,44 @@
+using System;
+
+namespace Atividade_04_Part_03
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			Console.WriteLine("Escolha a lista 1 ou 2: ");
+			int escolha = int.Parse(Console.ReadLine());
+			
+			if (escolha == 1)
+			{
+				// Preenche o vetor
+				int[] numeros = {1, 2, 3, 4, 5};
+				
+			    // Imprime os números
+				Console.WriteLine("Lista 1: ");
+				for (int i = 0; i < numeros.Length; i++)
+				{
+					Console.WriteLine(numeros[i]);
+					
+				}
+				Console.WriteLine((numeros.Length == 0)? "\nA lista é vazia" : "\nA lista não é vazia");
+			}
+			else if (escolha == 2)
+			{
+				
+				int[] numeros = {};
+				
+				Console.WriteLine("Lista 2: ");
+				for (int i = 0; i < numeros.Length; i++)
+				{
+					Console.WriteLine(numeros[i]);
+				}
+				Console.WriteLine((numeros.Length == 0)? "\nA lista é vazia" : "\nA lista não é vazia");
+				
+			}
+							
+			
+			Console.ReadKey();
+		}
+	}
+}
