@@ -1,0 +1,14 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Digite uma palavra: ");
+        string palavra = Console.ReadLine();
+
+        Console.WriteLine((palavra == null) ? "Palavra nula. " : "A palavra não é nula.");
+
+        Console.ReadKey(true);
+    }
+}
