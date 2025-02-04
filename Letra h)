@@ -1,0 +1,23 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Digite um número para conversão de string em int: ");
+        string strConvert = Console.ReadLine();
+        int varInt = 0;
+
+        // Tenta converter string para int (com saída no varInt)
+        if (Int32.TryParse(strConvert, out varInt))
+        {
+            Console.WriteLine("Conversão realizada: "+varInt);
+        }
+        else
+        {
+            Console.WriteLine("\nErro ao converter " + strConvert + " para inteiro."); // Mensagem de erro
+        }
+
+        Console.ReadKey();
+    }
+}
