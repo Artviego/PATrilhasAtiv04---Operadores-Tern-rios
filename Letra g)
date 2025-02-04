@@ -1,0 +1,15 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Digite um número: ");
+        int numero = int.Parse(Console.ReadLine());
+        string resultado = ((numero > 0 && numero != 0) ? ("O número "+numero+" é positivo") : "O número é negativo ou igual a 0");
+
+        Console.WriteLine(resultado);
+
+        Console.ReadKey();
+    }
+}
