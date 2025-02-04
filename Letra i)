@@ -1,0 +1,17 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Digite o primeiro número para uma divisão: ");
+        int primeiroNum = int.Parse(Console.ReadLine());
+
+        Console.Write("Digite o segundo número: ");
+        int segundoNum = int.Parse(Console.ReadLine());
+
+        Console.WriteLine((primeiroNum % segundoNum == 0) ? "\nO primeiro número é divisível pelo segundo número." : "\nO primeiro número não é divisível pelo segundo número.");
+
+        Console.ReadKey(true);
+    }
+}
